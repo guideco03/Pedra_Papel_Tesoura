@@ -9,29 +9,15 @@
 </head>
 
 <body>
+  <h1>Clique na imagem para jogar</h1>
   <div>
-  <p>Escolha a moeda de Entrada</p>
-  <div><input type="radio" name="in" value="real">REAL</div>
-  <div><input type="radio" name="in" value="dolar">DOLAR</div>
-  <div><input type="radio" name="in" value="euro">EURO</div>
-  <div><input type="radio" name="in" value="libra">LIBRA</div>
-    </div>
-  <div>
-    <p>Escolha a moeda de Saída</p>
-    <div><input type="radio" name="out" value="real">REAL</div>
-    <div><input type="radio" name="out" value="dolar">DOLAR</div>
-    <div><input type="radio" name="out" value="euro">EURO</div>
-    <div><input type="radio" name="out" value="libra">LIBRA</div>
+    <img src="pedra.jpg" alt="Pedra" onclick="play(1)">
+    <img src="papel.png" alt="Papel" onclick="play(2)">
+    <img src="tesoura.png" alt="Tesoura" onclick="play(3)">
   </div>
   <div>
-    <div>Digite o valor:</div>
-    <input id="quantia" type="number" step="0.01" value="0.00">
-  </div>
-  <div>
-    <button onclick="converter()"> CONVERTER </button>
-  </div>
-  <div>
-    <p> O valor Convertido é: <span id="res">0,0</span> </p>
+    <h2 id="resultado">Aqui vai o resultado</h2>
+    <h3 id="placar">Aqui vai o placar</h3>
   </div>
   
   <script src="script.js"></script>
